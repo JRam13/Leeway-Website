@@ -1,0 +1,72 @@
+<div id="work-gallery" class="item-wrapper">
+<span id="closebt" class="close-work-detail"><a href="#">close</a></span>
+	<!--custom backgrounds for galleries-->
+    <img src="images/backgrounds/gal-bg-noisy-black.jpg" id="gal-bg" class="noise" alt="">
+    <div class="item">
+    	<div class="info-work">
+            <div id="info">
+            	<span id="pagination" class="launcher"><a href="work-seo-name-02.html">&larr;</a> 02 of 28 <a href="work-seo-name-01.html">&rarr;</a></span>
+                <h3>HTML5, YOUTUBE & Vimeo video</h3>
+                <h4>Client: Self</h4>
+                <h5>Type: photo</h5>
+                <h5>Date: 02·25·2012</h5>
+                <div class="divider">&nbsp;</div>
+                <p>This is a gallery example with some items and description, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage.</p>
+               </div><!--end div#info-->
+		</div><!--end div.info-work-->
+        
+    	<div id="slideshow">
+        
+    		<ul id="fdgSlides">
+            	<li>
+                	<div class="wrapper-embed-video"><!--needed for responsive behaviors-->
+                    	<div class="video-container">
+                        	<iframe src="http://player.vimeo.com/video/7809605?title=0&amp;byline=0&amp;portrait=0&amp;color=33c4a7" width="1024" height="576" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
+                            <img alt="Play Video" src="images/skins-items/video-gallery-thumb-default-wide.png" width="640" height="360" title="No video playback capabilities, please download the video below" />
+                        </div>
+                    </div>
+                </li>
+                
+				<li>
+                	<div class="wrapper-embed-video"><!--needed for responsive behaviors-->
+                    	<div class="video-container">
+                        	<iframe width="853" height="480" src="http://www.youtube.com/embed/ipAL90Dmilw" frameborder="0" allowfullscreen></iframe>
+                            <img alt="Play Video" src="images/skins-items/video-gallery-thumb-default-wide.png" width="640" height="360" title="No video playback capabilities, please download the video below" />
+                        </div>
+                    </div>
+                </li>
+			</ul>
+            
+        </div><!--end slideshow-->
+    </div><!--end div.item-->
+</div><!--end div.item-wrapper-->
+
+<script src="js/loadworks.js"></script>
+<script src="js/jquery.jscrollpane.min.js"></script>
+<script src="js/jquery.mousewheel.js"></script>
+
+<script type="text/javascript">
+	if(!navigator.userAgent.match(/iPhone/i) ||
+	   !navigator.userAgent.match(/iPod/i)
+	   ){
+		  $(window).load(function(){
+				$(function()
+				{
+					$('.scrollable').jScrollPane();
+				});
+			})
+			
+			$(function()
+				{
+					$('.scrollable').jScrollPane();
+			});
+			
+			$('.scrollable').hover(function(){
+					$(".jspVerticalBar").fadeIn("fast")
+				
+				}, function(){
+					$(".jspVerticalBar").fadeOut("fast")
+			})				
+	}
+</script>
