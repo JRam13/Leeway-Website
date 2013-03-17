@@ -87,17 +87,17 @@ aside, nav, article, figure {
 
 body {
   font-family: font-family: 'Maven Pro', Helvetica, arial, sans;
-  font-size: 1em;
+	font-size: 1em;
   #font-size: .7em;
-  font-style: normal;
-  font-weight: 700;
-  text-shadow: none;
-  text-decoration: none;
-  text-transform: none;
-  letter-spacing: 0em;
-  word-spacing: 0em;
-  line-height: 1em;
-  overflow-x:hidden;
+	font-style: normal;
+	font-weight: 700;
+	text-shadow: none;
+	text-decoration: none;
+	text-transform: none;
+	letter-spacing: 0em;
+	word-spacing: 0em;
+	line-height: 1em;
+	overflow-x:hidden;
 }
 
 nav, #wrapper {
@@ -154,6 +154,13 @@ ul#thumbs li.thumb img#imgLoad{
 
 /*top navigation rule. All the rules starting with body#top-nav are refernt to this mode.*/
 body#top-nav #thumb-wrapper{margin-top:0px 0 0 0;*padding-top:0px;width:100%;overflow:hidden;background:#000;}
+
+#center {
+    width:980px;height:0px
+	background:#fff url(loading.gif) no-repeat 50% 50%;
+	position:relative;
+	margin:0 auto;/*make the image slider center-aligned */
+}
 
 
 /*********************************************
